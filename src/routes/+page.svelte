@@ -8,7 +8,6 @@
 
 {#await promise}
 	<div><span class="loading loading-spinner loading-xs" /></div>
-	loading
 {:then result}
 	{#each result.data as country}
 		<div>
