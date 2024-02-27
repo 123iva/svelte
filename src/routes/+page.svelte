@@ -9,7 +9,6 @@
 {#await promise}
 	<div><span class="loading loading-spinner loading-xs" /></div>
 {:then result}
-	<div>{JSON.stringify(result)}</div>
 	{#each result.data as country}
 		<div>
 			<li>{country.name}</li>
