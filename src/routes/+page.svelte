@@ -4,8 +4,6 @@
 	let promise = supabase.from('countries').select();
 </script>
 
-<div>{JSON.stringify(promise)}</div>
-
 {#await promise}
 	<div><span class="loading loading-spinner loading-xs" /></div>
 {:then result}
