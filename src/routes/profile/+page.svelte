@@ -74,11 +74,11 @@
 	<form on:submit|preventDefault={updateProfile} class="form-widget">
 		<div>Email: {$session.user.email}</div>
 		<div>
-			<label for="username">Name</label>
+			<label for="username">Name:</label>
 			<input id="username" type="text" bind:value={username} />
 		</div>
 		<div>
-			<label for="website">Website</label>
+			<label for="website">Website:</label>
 			<input id="website" type="text" bind:value={website} />
 		</div>
 		<div>
@@ -91,5 +91,5 @@
 		</button>
 	</form>
 {:else}
-	<div>seems you're not logged in!</div>
+	<div>Seems you're not logged in!</div>
 {/if}
